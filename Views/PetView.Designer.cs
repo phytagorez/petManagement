@@ -32,10 +32,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPetColour = new System.Windows.Forms.TextBox();
+            this.txtPetType = new System.Windows.Forms.TextBox();
+            this.txtPetName = new System.Windows.Forms.TextBox();
+            this.txtPetID = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,7 +44,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
@@ -92,10 +92,10 @@
             // 
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.textBox4);
-            this.tabPage1.Controls.Add(this.textBox3);
-            this.tabPage1.Controls.Add(this.textBox2);
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.txtPetColour);
+            this.tabPage1.Controls.Add(this.txtPetType);
+            this.tabPage1.Controls.Add(this.txtPetName);
+            this.tabPage1.Controls.Add(this.txtPetID);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.label3);
@@ -108,33 +108,33 @@
             this.tabPage1.Text = "Pet List";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // txtPetColour
             // 
-            this.textBox4.Location = new System.Drawing.Point(60, 198);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(232, 22);
-            this.textBox4.TabIndex = 11;
+            this.txtPetColour.Location = new System.Drawing.Point(60, 198);
+            this.txtPetColour.Name = "txtPetColour";
+            this.txtPetColour.Size = new System.Drawing.Size(232, 22);
+            this.txtPetColour.TabIndex = 11;
             // 
-            // textBox3
+            // txtPetType
             // 
-            this.textBox3.Location = new System.Drawing.Point(192, 131);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 10;
+            this.txtPetType.Location = new System.Drawing.Point(192, 131);
+            this.txtPetType.Name = "txtPetType";
+            this.txtPetType.Size = new System.Drawing.Size(100, 22);
+            this.txtPetType.TabIndex = 10;
             // 
-            // textBox2
+            // txtPetName
             // 
-            this.textBox2.Location = new System.Drawing.Point(60, 131);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 9;
+            this.txtPetName.Location = new System.Drawing.Point(60, 131);
+            this.txtPetName.Name = "txtPetName";
+            this.txtPetName.Size = new System.Drawing.Size(100, 22);
+            this.txtPetName.TabIndex = 9;
             // 
-            // textBox1
+            // txtPetID
             // 
-            this.textBox1.Location = new System.Drawing.Point(60, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 8;
+            this.txtPetID.Location = new System.Drawing.Point(60, 68);
+            this.txtPetID.Name = "txtPetID";
+            this.txtPetID.Size = new System.Drawing.Size(100, 22);
+            this.txtPetID.TabIndex = 8;
             // 
             // label5
             // 
@@ -183,7 +183,7 @@
             this.tabPage2.Controls.Add(this.button4);
             this.tabPage2.Controls.Add(this.dataGridView1);
             this.tabPage2.Controls.Add(this.button3);
-            this.tabPage2.Controls.Add(this.textBox5);
+            this.tabPage2.Controls.Add(this.txtSearch);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
@@ -223,12 +223,12 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Search Pet";
             // 
-            // textBox5
+            // txtSearch
             // 
-            this.textBox5.Location = new System.Drawing.Point(103, 4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(519, 22);
-            this.textBox5.TabIndex = 1;
+            this.txtSearch.Location = new System.Drawing.Point(103, 4);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(519, 22);
+            this.txtSearch.TabIndex = 1;
             // 
             // button3
             // 
@@ -243,11 +243,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(7, 28);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 32);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(696, 344);
+            this.dataGridView1.Size = new System.Drawing.Size(691, 335);
             this.dataGridView1.TabIndex = 3;
             // 
             // button4
@@ -308,10 +308,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPetColour;
+        private System.Windows.Forms.TextBox txtPetType;
+        private System.Windows.Forms.TextBox txtPetName;
+        private System.Windows.Forms.TextBox txtPetID;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -321,7 +321,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;

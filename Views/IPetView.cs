@@ -18,7 +18,7 @@ namespace petManagement.Views
         string SearchValue { get; set; }
         bool IsEdit { get; set; }
         bool IsSuccessful { get; set; }
-        bool Delete { get; set; }
+        string Message { get; set; }
 
         //Event
         event EventHandler SearchEvent;
