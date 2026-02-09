@@ -33,7 +33,7 @@ namespace petManagement.Views
         public string PetName 
         { 
             get { return txtPetName.Text; }
-            set { txtPetName.Text = value}
+            set { txtPetName.Text = value; }
         }
         public string PetType 
         {
