@@ -12,19 +12,30 @@ namespace petManagement.Views
 {
     public partial class PetView : Form, IPetView
     {
-        //Properties
-        public PetView()
-        {
-            InitializeComponent();
-        }
-
         //Fields
         private string message;
         private bool isSuccessful;
         private bool isEdit;
 
-
         //Constructor
+        public PetView()
+        {
+            InitializeComponent();
+            AssociateAndRaiseViewEvents();
+            tabControl1.TabPages.Remove(tabPagePetDetail);
+        }
+
+        private void AssociateAndRaiseViewEvents()
+        {
+            btnSearch.Click += delegate { SearchEvent?.Invoke(this, EventArgs.Empty); };
+            txtSearch.KeyDown += (s, e) =>
+            {
+                if (e.KeyCode == Keys.Enter)
+                    SearchEvent?.Invoke(this, EventArgs.Empty);
+            };
+        }
+
+        //Properties
         public string PetId 
         { 
             get { return txtPetID.Text; }
