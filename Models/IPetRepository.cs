@@ -12,6 +12,6 @@ namespace petManagement.Models
         void Edit(petModel petModel);
         void Delete(int id);
         IEnumerable<petModel> GetAll();
-        IEnumerable<petModel> GetByValue();
+        IEnumerable<petModel> GetByValue(string value);
     }
 }
