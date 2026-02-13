@@ -59,6 +59,8 @@
     <Compile Include="Views\PetView.Designer.cs">
       <DependentUpon>PetView.cs</DependentUpon>
     </Compile>
+    <Compile Include="_Repository\BaseRepository.cs" />
+    <Compile Include="_Repository\PetRepository.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
